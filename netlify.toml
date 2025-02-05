@@ -8,7 +8,7 @@
 
 [build.environment]
   # Specify the Node.js version for the build
-  NODE_VERSION = "18.12"
+  NODE_VERSION = "23.3.0"  # or any version that works for you
   # Add Corepack as an environment variable (to use the latest Corepack)
   COREPACK = "latest"
 
