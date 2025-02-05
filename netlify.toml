@@ -1,0 +1,25 @@
+# Netlify configuration file
+
+[build]
+  publish = "build"
+  
+  # Command to build your site (adjust based on your project setup)
+  command = "npm run build"
+
+[build.environment]
+  # Specify the Node.js version for the build
+  NODE_VERSION = "16"  # Or any version that works for you
+
+  # Add Corepack as an environment variable (to use the latest Corepack)
+  COREPACK = "latest"
+
+  # Optionally, set the default package manager to pnpm
+  PACKAGE_MANAGER = "pnpm"
+
+[[plugins]]
+  package = "@netlify/plugin-cache"
+  # Any additional plugin options can go here if needed
+
+[[plugins]]
+  package = "@netlify/plugin-corepack"
+  # Ensures Corepack is installed and can activate pnpm

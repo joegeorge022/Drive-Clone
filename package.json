@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "build": "next build",
+    "prebuild": "corepack prepare pnpm@latest --activate",
     "check": "next lint && tsc --noEmit",
     "db:generate": "drizzle-kit generate",
     "db:migrate": "drizzle-kit migrate",
@@ -52,3 +53,4 @@
   },
   "packageManager": "pnpm@10.1.0"
 }
+
